@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+    margin: 0;
+    overflow: hidden;
+}
+
+#game {
+    position: relative;
+    width: 600px;
+    height: 200px;
+    background-color: white;
+    border: 2px solid black;
+}
+
+#dino {
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    height: 80px;
+    background-image: url(images/squirrel.PNG);
+    background-size: 90px 90px;
+}
+
+#cactus {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 20px;
+    height: 40px;
+    background-color: green;
+    animation: moveCactus 2s linear infinite;
+}
+
+@keyframes moveCactus {
+    from {
+        right: 0;
+    }
+    to {
+        right: 100%;
+    }
+}
